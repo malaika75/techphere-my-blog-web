@@ -10,23 +10,21 @@ const Comments = ({postId}:{postId:string}) => {
     const [name, setName] = useState("")
     const [email , setEmail] = useState("")
 
-    const fetchComments = async () => {
-    const query = `*[_type == "comment" && post._ref == $postId]{
-      name,
-      email,
-      comment
-    }`;
-
-    const result = await client.fetch(query, { postId });
-    setComments(result);
-  };
-
   useEffect(() => {
-    if (postId) {
+    const fetchComments = async () => {
+      const query = `*[_type == "comment" && post._ref == $postId]{
+        name,
+        email,
+        comment
+      }`;
+
+      const result = await client.fetch(query, { postId });
+      setComments(result);
+    };
+if (postId) {
       fetchComments();
     }
-  },  [postId, fetchComments]);
-
+  }, [postId]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();

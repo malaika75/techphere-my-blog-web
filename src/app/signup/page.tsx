@@ -11,7 +11,7 @@ function page() {
       Join the TechSphere Community!
       </h1>
       <p className="leading-relaxed mt-4">
-      Stay updated with the latest tech trends, tips, and exclusive content all in one place.&quot;"
+      Stay updated with the latest tech trends, tips, and exclusive content all in one place.&quot;
       </p>
     </div>
     <div className="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
