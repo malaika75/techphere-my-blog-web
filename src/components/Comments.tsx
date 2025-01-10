@@ -25,7 +25,7 @@ const Comments = ({postId}:{postId:string}) => {
     if (postId) {
       fetchComments();
     }
-  }, [postId]);
+  },  [postId, fetchComments]);
 
 
     const handleSubmit = async (e: React.FormEvent) => {

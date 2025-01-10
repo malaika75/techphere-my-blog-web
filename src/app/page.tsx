@@ -35,7 +35,7 @@ export default async function Home() {
       <div className='w-9/12 sm:h-[350px] bg-blue-950 lg:mx-40 md:mx-16 md:top-[400px] top-[260px] mx-12 absolute xl:top-[550px] border-2 border-gray-100 border-opacity-20 text-white shadow-2xl shadow-blue-950 rounded-md -mt-10 sm:mx-20'>
         <p className='text-center text-semibold text-2xl p-4 sm:mt-6 font-mono'>TechSphere</p>
         <p className='w-9/12 mx-auto sm:mt-4 text-semibold text-center'>Explore the world of technology with TechSphere where innovation meets inspiration.</p>
-        <p className='hidden sm:flex text-center mx-auto '>Discover blogs that ignite curiosity and empower ideas! From the latest breakthroughs in tech to practical insights for everyday life, TechSphere is your trusted guide in this ever evolving digital era. Join us as we decode complex trends, share expert perspectives, and bring you closer to the future of technology. At TechSphere, we don't just talk about innovation we live it.</p>
+        <p className='hidden sm:flex text-center mx-auto '>Discover blogs that ignite curiosity and empower ideas! From the latest breakthroughs in tech to practical insights for everyday life, TechSphere is your trusted guide in this ever evolving digital era. Join us as we decode complex trends, share expert perspectives, and bring you closer to the future of technology. At TechSphere, we don&apos;t just talk about innovation we live it.</p>
       </div>
 
       <h1 className='text-4xl font-serif font-semibold xl:mt-40 mt-48 md:mt-56 sm:mx-20 mx-4'>Recent posts</h1>
