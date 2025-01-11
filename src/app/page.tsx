@@ -41,22 +41,22 @@ export default async function Home() {
       <h1 className='text-4xl font-serif font-semibold xl:mt-40 mt-48 md:mt-56 sm:mx-20 mx-4'>Recent posts</h1>
       <section className="text-gray-600 body-font">
   <div className="container px-5 py-24">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 w-[1300px]"> {/* Improved grid gap */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:w-[1300px]"> 
       {post.map((post: postType) => (
         <div key={post.slug} className="p-4">
-          <div className="h-full border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out"> {/* Added elevation and hover effect */}
+          <div className="h-full border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 ease-in-out">
             {post.image && (
               <Image
                 src={urlFor(post.image).width(400).url()} // Set image width dynamically
                 alt={post.title}
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                height={200} // Adjusted height for better aspect ratio
+                height={200} 
                 width={400}
                 quality={100}
                 unoptimized
               />
             )}
-            <div className="p-6 bg-white"> {/* Added background for content area */}
+            <div className="p-6 bg-white"> 
               <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
                 {post.title}
               </h2>
