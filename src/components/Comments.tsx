@@ -46,6 +46,8 @@ if (postId) {
             setName('');
             setEmail('');
             setNewcomments('');
+            console.log('Sending data:', newEntry);
+
           } catch (error) {
             console.error('Error adding comment:', error);
             alert('Failed to add comment');
